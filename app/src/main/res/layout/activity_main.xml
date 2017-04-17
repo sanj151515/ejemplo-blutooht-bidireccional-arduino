@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.es.ejemploblue.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txtArduino"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="on"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOn"
+        android:layout_below="@+id/txtArduino"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOff"
+        android:text="off"
+        android:layout_below="@+id/btnOn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms"
+        android:text="sms"
+        android:onClick="smsb"
+        android:layout_below="@+id/btnOff"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/foto"
+        android:text="foto"
+        android:onClick="fotob"
+        android:layout_below="@+id/sms"/>
+</RelativeLayout>
